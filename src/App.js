@@ -77,6 +77,10 @@ class App extends Component {
               path='/'
               component={BookmarkList}
             />
+            <Route 
+              path='/edit/:bookmarkId'
+              component={EditBookmark}
+            />
           </div>
         </BookmarksContext.Provider>
       </main>
