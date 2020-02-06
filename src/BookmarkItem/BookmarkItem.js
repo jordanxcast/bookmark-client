@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from '../Rating/Rating';
-import BookmarksContext from '../BookmarksContext';
+import PropTypes from 'prop-types';
 import config from '../config';
 import './BookmarkItem.css';
 
@@ -47,6 +47,10 @@ export default function BookmarkItem(props) {
             {props.description}
           </p>
           <div className='BookmarkItem__buttons'>
+            <Link to={`/edit/${props.id}`}>
+              Edit
+            </Link>
+            {' '}
             <button
               className='BookmarkItem__description'
               onClick={() => {
